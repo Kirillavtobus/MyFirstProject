@@ -36,6 +36,7 @@
     width: 15px;
     height: 15px;
     fill: #000;
+    background: black;
 }
 .first-page-backdrop__close .first-page-backdrop__close-svg {
     position: relative;
