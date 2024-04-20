@@ -7,6 +7,106 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    
+    <div>
+        <!-- first-page-backdrop - start -->
+        <div class="first-page-backdrop">
+            <form class="first-page-backdrop__background-modal">
+                <button class="first-page-backdrop__close" type="button">
+                    <svg class="first-page-backdrop__close-svg">
+                        <use href="./images/first-page/first-page-symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p class="first-page-backdrop__description">Привіт!<br>
+                    Ви потрапили на сайт інтерактивних ігор та завдань<br>
+                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+                    Бажаємо Вам гарно провести час!</p>
+                <p class="first-page-backdrop__write-your-name">Введіть своє ім’я:</p>
+                <input type="text" placeholder="Ваше ім’я..." class="first-page-backdrop__input">
+                <br>
+                <button type="button" class="first-page-backdrop__save">Зберегти</button>
+                <svg class="first-page-backdrop__img first-page-backdrop__first-img">
+                    <use href="./images/first-page/first-page-symbol-defs.svg#icon-sword"></use>
+                </svg>
+                <svg class="first-page-backdrop__img first-page-backdrop__second-img">
+                    <use href="./images/first-page/first-page-symbol-defs.svg#icon-game-controller"></use>
+                </svg>
+                <svg class="first-page-backdrop__img first-page-backdrop__third-img">
+                    <use href="./images/first-page/first-page-symbol-defs.svg#icon-puzzle"></use>
+                </svg>
+                <svg class="first-page-backdrop__img first-page-backdrop__forth-img">
+                    <use href="./images/first-page/first-page-symbol-defs.svg#icon-tic-tac-toe"></use>
+                </svg>
+            </form>
+        </div>
+        <!-- first-page-backdrop - end -->
+        <!-- header - start -->
+        <section id="header">
+            <div class="container">
+                <div class="header__components">
+                    <div class="header__component">
+                        <svg class="header__logo">
+                            <use href="./images/header/header-symbol-defs.svg#logo"></use>
+                        </svg>
+                    </div>
+                    <div class="header__component">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <select id="sort-select">
+                                    <div class="sort-style">
+                                        <option value="interactive" class="sort-option interactive">Інтерактив</option>
+                                        <option value="number" class="sort-option">Числовий</option>
+                                        <option value="games" class="sort-option">Ігровий</option>
+                                        <option value="means" class="sort-option">Ознайомчий</option>
+                                    </div>
+                                </select>
+                            </li>
+                            <li class="header__item">
+                                <p class="header__text">Наша команда</p>
+                            </li>
+                            <li class="header__item">
+                                <p class="header__text">Контакти</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__component header__component-switch">
+                        <div class="header__component-switch-item">
+                            <div class="switch-container">
+                                <div class="switch">
+                                  <div class="ball"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__component-switch-item">
+                            <p class="header__description">Вітаємо, <span class="user-name">User</span>!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- header - end -->
+        <!-- check born - start -->
+        <section id="leap-year__section">
+            <div class="container">
+                <div class="cheak-age-night">
+                    <h1 class="games__leap">Популярні інетрактивні ігри</h1>
+                <div class="vector__leap"></div>
+                <h1 class="title__leap">Перевір в який рік ти народився</h1>
+                <div class="leap__list">
+                    <input class="input__leap"  type="text" placeholder="Введіть рік народження" id="leap-input">
+                    <button class="input-but__leap" type="button">
+                        <svg class="leap-year__svg">
+                            <use href="./images/check-the-born-year/check-your-born-year.svg#icon-dandruff"></use>
+                        </svg>
+                    </button>
+                    <p class="yesNo__leap" id="yes-no-leap">
+        
+                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- check born - start -->
+    </div>
+    <script src="/scripts/check-the-born-year.js"></script>
 </body>
 </html>

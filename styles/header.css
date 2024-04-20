@@ -1,0 +1,128 @@
+.container {
+    max-width: 1090px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header {
+    padding-top: 21px;
+}
+.header__components {
+    display: flex;
+}
+
+.header__component:nth-child(2){
+    margin-left: 81px;
+}
+
+.header__component:nth-child(3){
+    margin-left: 361px;
+}
+
+.header__logo {
+    width: 93px;
+    height: 38.15px;
+    fill: #fff;
+}
+.header__list {
+    gap: 50px;
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+}
+.header__item {
+    width: 97px;
+}
+.header__text {
+    font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.header__text:hover {
+    color: #8ACECF;
+    transition: 500ms;
+}
+.switch-container {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .switch {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc00; /* Яскравий колір */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.3s ease, background-color 0.3s ease; /* Анімація для зміни кольору */
+    border: 2px solid #aa8926; /* Темний бордер */
+  }
+  
+  .switch.night .ball {
+    left: 100%;
+    transform: translateX(-100%); /* зміщення на 100% вправо */
+    background-color: #7b6f6f; /* Темний колір місяця */
+    border-color: #423b3b; /* Ще темніший бордер */
+  }
+.header__component-switch {
+    display: flex;
+    gap: 51px;
+}
+.header__description {
+    font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 140px;
+}
+.display-none {
+    display: none;
+}
+.header-backdrop__sort-button {
+    border: none;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+#sort-select {
+    background-color: #fff;
+    border: none;
+    margin-top: 10px;
+     width: 160px;
+     padding-right: 60px;
+    font-family: "Montserrat Alternates", sans-serif;
+    transition: 500ms;
+}
+#sort-select:hover {
+    transition: 500ms;
+    color: #8ACECF;
+}
+.sort-option {
+    display: block;
+    background-color: #fff;
+     width: 160px;
+    border-radius: 0 20px 20px 0;
+    border: 1px #000 solid;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.user-name {
+    width: 100px;
+}
+.sort-style {
+    width: 160px;
+    border-radius: 20px;
+    
+}

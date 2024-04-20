@@ -1,0 +1,106 @@
+/* modal window - start */
+.first-page-backdrop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+ /* .first-page-is-hidden {
+     opacity: 1;
+     pointer-events: none;
+ } */
+.first-page-backdrop__background-modal {
+    position: absolute;
+    width: 576px;
+    height: 316px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.first-page-backdrop__close {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 521px;
+    margin-top: 30px;
+}
+.first-page-backdrop__close-svg {
+    width: 15px;
+    height: 15px;
+    fill: #000;
+}
+.first-page-backdrop__close .first-page-backdrop__close-svg {
+    position: relative;
+    transition: transform 1s;
+}
+.first-page-backdrop__description {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: -15px;
+}
+.first-page-backdrop__write-your-name {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 42px;
+}
+.first-page-backdrop__input {
+    width: 169px;
+    height: 35px;
+    padding-left: 10px;
+    color: #7e7e7e;
+    background-color: #d7d7d7;
+    border-radius: 20px;
+    border: none;
+    margin-left: 204px;
+    margin-top: 18px;
+    font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.first-page-backdrop__save {
+    width: 105px;
+    height: 35px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-left: 236px;
+    margin-top: 18px;
+    margin-bottom: 47px;
+}
+.first-page-backdrop__img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.first-page-backdrop__first-img {
+    /* width: 30px;
+    height: 30px;
+    position: absolute; */
+    margin-top: -80px;
+    margin-left: -300px;
+}
+.first-page-backdrop__second-img {
+    margin-left: 170px;
+    margin-top: -80px;
+}
+.first-page-backdrop__third-img {
+    margin-top: 12.5px;
+    margin-left: -250px;
+}
+.first-page-backdrop__forth-img {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+/* modal window - end */
