@@ -21,4 +21,4 @@ document.querySelector('.input-but__leap').addEventListener('click',function(){
             yesNoLeap.style.color = 'black'
     }
     yesNoLeap.style.opacity = '1'
-})
+}) 

@@ -1,4 +1,6 @@
 @import '/styles/first-page.css';
 @import '/styles/header.css';
 @import '/styles/check-the-born-year.css';
-@import '/styles/guess-the-number.css'
+@import '/styles/guess-the-number.css';
+@import '/styles/paper-rock-sizors.css';
+@import '/styles/calculator.css'

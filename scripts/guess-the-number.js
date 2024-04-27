@@ -14,12 +14,12 @@ buttonGuess.addEventListener('click',function(event){
             answerGuess.style.color = 'green'
         } else{
             inputGuess.value = '';
-            answerGuess.textContent = (guess > secretNumber) ? `Загадне число менше, ніж ${guess} : Загадане число більше ніж ${guess}`
+            answerGuess.textContent = (guess > secretNumber) ? `Загадне число менше, ніж ${guess} `: `Загадане число більше ніж ${guess}`
             answerGuess.style.color = 'red'
         }
     } else{
         inputGuess.value = '';
-        answerGuess.textContent = `Введіть ваше число`
+        answerGuess.textContent = "Введіть ваше число"
         answerGuess.style.color = 'black'
     }
     setTimeout(()=>{

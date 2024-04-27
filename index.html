@@ -129,9 +129,91 @@
             </div>
         </section>
         <!-- guess-the-number - end -->
+        <!-- paper-rock-sizors -start -->
+        <section id="prs__section">
+            <div class="continer prs-container">
+                <!-- class="prs-night" -->
+                <div class="prs-night">
+                    <div class="vector__prs"></div>
+                    <h1 class="prs__title">Камінь - ножиці - папір</h1>
+                    <div class="prs__select">
+                        <ul class="prs-button__list">
+                        <li class="prs-button__item">
+                            <button class="prs__button" type="button" id="rock-button">
+                                камінь
+                            </button>
+                        </li>
+                        <li class="prs-button__item">
+                            <button class="prs__button" type="button" id="scissors-button">
+                                ножиці
+                            </button>
+                        </li>
+                        <li class="prs-button__item">
+                            <button class="prs__button" type="button" id="paper-button">
+                                папір
+                            </button>
+                        </li>
+                        <li>
+                            <ul class="score__list">
+                                <li class="score__item" id="score">
+                                    Рахунок:
+                                </li>
+                                <li class="score__item" id="computer-score">
+                                    <span id="computer-label">Комп'ютер -</span><span id="comp-score-text"></span>
+                                </li>
+                                <li class="score__item" id="user-score">
+                                    <span id="user-label">Ви -</span><span id="user-score-text"></span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>  
+                <p class="prs__winOrLose" id="winOrLose"></p>
+                <button type="button" class="prs-computer__button" id="computer-variant">
+                    Варіант комп'ютера
+                </button>
+                </div>
+            </div>
+            </section>
+        <!-- paper-rock-sizors -end -->
+        <!-- calcutar -start -->   
+        <section id="calculator__section">
+            <div class="container">
+                <div class="calculator-night">
+                    <div class="vector__calculator"></div>
+            <h1 class="calculator__title">Калькулятор</h1> 
+            <div class="calculator__container" id="calculator">
+                <input class="input__calculator" type="text" id="first-input" placeholder="Введіть число">
+                <ul class="button__list">
+                    <li class="button__element">
+                        <button class="button__calculator" type="button" id="plus">+</button>
+                    </li>
+                    <li class="button__element">
+                        <button class="button__calculator" type="button" id="minus">-</button>
+                    </li>
+                    <li class="button__element">
+                        <button class="button__calculator" type="button" id="multiply">*</button>
+                    </li>
+                    <li class="button__element">
+                        <button class="button__calculator" type="button" id="division">/</button>
+                    </li>
+                </ul>    
+                <input class="input__calculator" type="text" id="second-input" placeholder="Введіть число">
+                <button class="ebutton__calculator" type="button" id="equals">
+                    =
+                </button>
+                <p class="calc__result" id="result-p"></p>
+            </div>
+                </div>
+            </div>
+            
+            </section> 
+        <!-- calcutar -end -->    
     </div>
     <script src="/scripts/first-page.js"></script>
     <script src="/scripts/check-the-born-year.js"></script>\
     <script src="/scripts/guess-the-number.js"></script>
+    <script src="/scripts/paper-rock-sizors.js"></script>
+    <script src="/scripts/calculator.js"></script>
 </body>
 </html>
