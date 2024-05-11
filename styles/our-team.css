@@ -1,0 +1,86 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    /* // background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    max-width: 1090px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our-team__box {
+    margin: auto;
+}
+.our-team__title {
+    text-align: center;
+    margin-top: 36px;
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.our-team__line {
+    background-color: #000000;
+    height: 1px;
+    width: 536px;
+    margin: auto;
+    /* // margin-top: 36px; */
+}
+.worker-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin: auto;
+}
+.worker-name {
+    font-size: 14px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.worker-work {
+    font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-bottom: 24px;
+}
+.swiper-button-next::after {
+    color: black;
+    --swiper-navigation-size: 90px;
+}
+.swiper-button-prev::after {
+    color: black;
+    --swiper-navigation-size: 90px;
+}

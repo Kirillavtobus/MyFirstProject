@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div>
@@ -231,6 +237,30 @@
             </div>
         </section>
           <!-- calculator-of-time -end -->
+          <!-- dino -start -->
+          <section id="dino-game">
+            <div class="container">
+                <div class="dinosaur-night">
+                    <div class="dino-line"></div>
+                    <div class="dino-game__box">
+                        <div class="dino-mini-box">
+                            <h1 class="dino-title">Google динозавр</h1>
+                            <div class="dino-overlay">
+                                <svg class="dino-info">
+                                    <use href="./images/dinosaur/dino-symbol-defs.svg#icon-info"></use>
+                                </svg>
+                                <p class="dino-description">Щоб розпочати гру нажміть клавішу "W"</p>
+                            </div>
+                        </div>
+                        <canvas id="canvass" width="720" height="297"></canvas>
+                        <img class="cactus-image" src="./images/dinosaur/cactus.png" alt="">
+                        <img class="dino-image" src="./images/dinosaur/dino.png" alt="">
+                        <button id="retryButton">Retry</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <!-- dino -end -->
           <!-- three-numbers -start -->
           <section id="highest-number__section"></section>
           <div class="container">
@@ -247,6 +277,38 @@
           </div>
       </section>
           <!-- three-numbers -end -->
+          <!-- our-team -start -->
+          <section id="our-team">
+            <div class="container">
+              <div class="our-team-night">
+                <div class="our-team__line"></div>
+                <h3 class="our-team__title">Наша команда</h3>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="our-team__box">
+                          <img class="worker-img" src="./images/our-team/pasha.jpg" alt="">
+                          <h5 class="worker-name">Паша</h5>
+                          <p class="worker-work">ScramMaster</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="our-team__box">
+                          <img class="worker-img" src="./images/our-team/marko.jpg" alt="">
+                          <h5 class="worker-name">Марко</h5>
+                          <p class="worker-work">TeamLead</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+              </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <!-- our-team -end -->
           <!-- pick-the-scientist -start -->
           <section id="info__section">
             <div class="container">
@@ -261,6 +323,42 @@
                 </div>
         </section>
           <!-- pick-the-scientist -end -->
+          <!-- soccer -start -->
+          <!-- <section id="soccer">
+    <div class="container">
+        <div class="soccer-night">
+            <div class="soccer-line"></div>
+        <h3 class="soccer__title">Футбол</h3>
+        <div class="border-field">
+            <div id="field">
+                <img src="./images/soccer/ball.png" alt="" id="ball">
+            </div>
+        </div>
+        </div>
+    </div>
+</section> -->
+<section id="soccer">
+    <div class="container">
+        <div class="soccer-night">
+            <div class="soccer-line"></div>
+        <h3 class="soccer__title">Футбол</h3>
+        <div class="border-field">
+            <div id="field">
+                <img src="./images/soccer/ball.png" alt="" id="ball">
+                <div class="gate__soccer"></div>
+                <div class="left__gate">
+                    <img class="left-gate__soccer" id="left-gate" src="./images/soccer/right-gate.png" alt="right-gate">
+                </div>
+                <div class="right__gate">
+                    <img class="right-gate__soccer" id="right-gate" src="./images/soccer/left-gate.png" alt="left-gate">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+          <!-- doccer -end -->
     </div>
     <script src="/scripts/first-page.js"></script>
     <script src="/scripts/check-the-born-year.js"></script>\
@@ -270,5 +368,8 @@
     <script src="/scripts/calculator-of-time.js"></script>
     <script src="/scripts/three-numbers.js"></script>
     <script src="/scripts/pick-the-scientist.js"></script>
+    <script src="/scripts/dino.js"></script>
+    <script src="/scripts/our-team.js"></script>
+    <script src="/scripts/soccer.js"></script>
 </body>
 </html>

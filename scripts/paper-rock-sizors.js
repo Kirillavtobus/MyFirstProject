@@ -1,29 +1,24 @@
 const choises = ['rock','paper','scissors']
 let computerWins = 0;
 let userWins = 0
+
 document.getElementById('rock-button').addEventListener('click',function(){
-    playGame('rock')
-})
+        const computerChoises = choises[Math.floor(Math.random()* choises.length)]
+        playGame('rock', computerChoises)
+    }) 
 
 document.getElementById('paper-button').addEventListener('click',function(){
-    playGame('paper')
-})
+        const computerChoises = choises[Math.floor(Math.random()* choises.length)]
+        playGame('paper', computerChoises)
+    })
 
 document.getElementById('scissors-button').addEventListener('click',function(){
-    playGame('scissors')
-})
-document.getElementById('computer-variant').addEventListener('click',function(){
-    const computerChoise = choises[Math.floor(Math.random()* choises.length)]
-    console.log('userChoise',computerChoise)
-    playGameWithComputer(computerChoise)
-})
+        const computerChoises = choises[Math.floor(Math.random()* choises.length)]
+        playGame('scissors', computerChoises)
+    })
 
-function playGame(userChoise){
-    document.getElementById('winOrLose').innerHTML = ''
-}
-function playGameWithComputer(computerChoise){
-    const userChoise = choises[Math.floor(Math.random()* choises.length)]
-    console.log('userChoise',userChoise)
+function playGame(userChoise,computerChoise){
+    console.log('userChoise',userChoise, 'compChoise:', computerChoise)
     let result = ''
     if(
         (userChoise === 'rock' && computerChoise === 'scissors') || 
@@ -47,3 +42,7 @@ function playGameWithComputer(computerChoise){
     document.getElementById('comp-score-text').innerHTML = computerWins
     document.getElementById('user-score-text').innerHTML = userWins
 }
+
+// document.getElementById('computer-variant').addEventListener('click', function(playGame){
+//     playGame()
+// })

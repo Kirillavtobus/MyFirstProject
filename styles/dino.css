@@ -1,0 +1,91 @@
+.dino-title {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.dino-game {
+    /* // margin-top: 36px; */
+}
+.container {
+    max-width: 1090px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#canvass {
+    border-bottom: 2px black solid;
+    display: block;
+    margin: 0 auto;
+}
+.dino-game__box #retryButton {
+    position: relative;
+}
+/* // #dino-game #retryButton {
+//     position: relative;
+// } */
+#retryButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: -39px;
+    
+}
+#retryButton:hover {
+    background-color: #45a049;
+}
+.dino-line {
+        background-color: #000000;
+        height: 1px;
+        width: 536px;
+        margin: auto;
+}
+.dino-mini-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.dino-overlay {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+}
+.dino-info {
+    margin-top: 12.5px;
+    width: 20px;
+    height: 20px;
+}
+.dino-overlay:hover .dino-description {  
+    opacity: 1;
+}
+.dino-description {
+    opacity: 0;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px #332d2d solid;
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    /* background-color: rgba($color: #332d2d, $alpha: 0.3); */
+}
+.dino-image {
+    display: none;
+}
+.cactus-image {
+    display: none;
+}
